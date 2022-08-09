@@ -3,5 +3,5 @@ class Group < ApplicationRecord
   has_many :operations_groups, dependent: :destroy
   has_many :operations, through: :operations_groups
 
-  validates :name, :icon, presence: true 
+  validates :name, :icon, presence: true
 end
